@@ -1,3 +1,4 @@
+import numpy as np
 def laplacian(p, h):
     p_left = np.column_stack((p[:, -1], p))
     p_right = np.column_stack((p, p[:, 0]))
